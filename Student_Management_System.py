@@ -29,8 +29,8 @@ def show_students_info():
     student_mg.execute("Select * from student_data")
 
     for(RollNumber,name,grade,email,phone,address,gender,dob) in student_mg.fetchall():
-        print(f"RollNumber:{RollNumber} ,Name:{name},Grade:{grade},Email:{email},Phone:{phone},Address:{address},Gender:{gender},D.O.B:{dob}")
-       
+        print(f"RollNumber:{RollNumber}\nName:{name}\nGrade:{grade}\nEmail:{email}\nPhone:{phone}\nAddress:{address}\nGender:{gender}\nD.O.B:{dob}\n")
+        
 # make fuction to search student in database
       
 def search_student():
